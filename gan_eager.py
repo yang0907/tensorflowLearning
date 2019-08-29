@@ -6,6 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import config
+#需要创建一个config文件，里面存放了MNIST数据集的绝对位置，以及想要输出图片的文件夹位置
 tf.enable_eager_execution()
 mnist = input_data.read_data_sets(os.path.join(config.ROOT_DIR, "MNIST_data"), one_hot=True)
 
